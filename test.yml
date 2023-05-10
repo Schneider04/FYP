@@ -3,6 +3,11 @@ trigger:
 
 pool: fypagent
 
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
 steps:
   - script: echo testing
     displayName: Testing 1
