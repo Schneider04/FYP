@@ -4,7 +4,6 @@ trigger:
 pool: fypagent
 
 variables:
-  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
