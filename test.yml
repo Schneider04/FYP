@@ -1,0 +1,13 @@
+---
+trigger:
+  -main
+
+pool: fypagent
+
+steps:
+  - script: echo testing
+    displayName: Testing 1
+    -script:
+      echo this is the hostname
+      echo $HOSTNAME
+    displayName: Testing 2
