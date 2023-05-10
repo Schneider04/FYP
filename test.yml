@@ -4,7 +4,6 @@ trigger:
 pool: fypagent
 
 variables:
-  solution: 'C:\Users\21022677\Downloads\myagentfyp\_work\1\s\**\*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
