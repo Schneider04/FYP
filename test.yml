@@ -3,13 +3,6 @@ trigger:
 
 pool: fypagent
 
-- task: VSBuild@1
-  inputs:
-    solution: '**/*.sln'
-    vsVersion: 'latest'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
 steps:
   - script: echo testing
     displayName: Testing 1
