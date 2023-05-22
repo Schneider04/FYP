@@ -1,9 +1,5 @@
-#This is a sample Image 
-FROM ubuntu 
-
-RUN apt-get update 
-RUN apt-get install –y nginx 
-CMD [“echo”,”Image created”] 
+FROM nginx:1.20.1-alpine
+COPY src/html /usr/share/nginx/html
 
 #documentation(default for nginx is 80)
 # EXPOSE 80
