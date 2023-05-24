@@ -10,6 +10,11 @@ pool: fypagent
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: Whitesource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: '$(projectName)'
+
 steps:
   - script: echo testing
     displayName: Testing 1
@@ -17,5 +22,3 @@ steps:
       echo this is the hostname
       echo $HOSTNAME
     displayName: Testing 2
-    
-    
