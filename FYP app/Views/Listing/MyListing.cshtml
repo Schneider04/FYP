@@ -1,0 +1,57 @@
+﻿@using FYPfinalWEBAPP.Controllers;
+@using FYPfinalWEBAPP.Models;
+@using RP.SOI.DotNet.Utils
+
+@model List<List>
+
+<div class="container">
+
+    <div class="my-3">
+        <h2>My Food Listing</h2>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-@TempData["MsgType"]">
+            @TempData["Message"]
+        </div>
+    }
+    <div class="row">
+        @foreach (List row in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        @row.FoodName (@string.Format("{0:yyyy MMM}", row.ExpiryDate))
+                    </div>
+                    <div class="card-body">
+                        <a asp-controller="Listing" asp-action="Details" asp-route-id="@row.Id">
+                            <img src="~/images/@row.Picture"
+                             width="150" height="90"
+                             class="pull-left" style="padding-right: 5px;" />
+                        </a>
+                        <div>
+                            <small>
+                                @row.Description.Abbreviate()
+                                <a asp-controller="Listing"
+                               asp-action="Update"
+                               asp-route-id="@row.Id"
+                               style="text-decoration:none; color:dodgerblue">
+                                    <i class="bi bi-pencil"></i>
+                                </a> |
+                                <a asp-controller="Listing"
+                               asp-action="Delete"
+                               asp-route-id="@row.Id"
+                               style="text-decoration:none; color:indianred"
+                               onclick="return confirm('Delete Trip [@row.FoodName]')">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
