@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\21016216\\Desktop\\DevOps FYP\\FYPwebApp\\FYPfinalWEBAPP\\FYPfinalWEBAPP.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\21016216\\Desktop\\DevOps FYP\\FYPwebApp\\FYPfinalWEBAPP\\FYPfinalWEBAPP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\21016216\\Desktop\\DevOps FYP\\FYPwebApp\\FYPfinalWEBAPP\\FYPfinalWEBAPP.csproj",
+        "projectName": "FYPfinalWEBAPP",
+        "projectPath": "C:\\Users\\21016216\\Desktop\\DevOps FYP\\FYPwebApp\\FYPfinalWEBAPP\\FYPfinalWEBAPP.csproj",
+        "packagesPath": "C:\\Users\\21016216\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\21016216\\Desktop\\DevOps FYP\\FYPwebApp\\FYPfinalWEBAPP\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\21016216\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://pkgs.dev.azure.com/FYP2023Team3/_packaging/FYP2023Team3/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
