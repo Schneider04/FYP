@@ -1,0 +1,56 @@
+﻿DROP TABLE IF EXISTS Candidate;
+DROP TABLE IF EXISTS TravelHighlight;
+DROP TABLE IF EXISTS TravelUser;
+
+CREATE TABLE TravelUser (
+  UserId    VARCHAR(10) PRIMARY KEY,
+  UserPw    VARBINARY(50) NOT NULL,
+  FullName  VARCHAR(50) NOT NULL
+);
+
+INSERT INTO TravelUser (UserId, UserPw, FullName) VALUES 
+('john',    HASHBYTES('SHA1', 'password1'), 'John Lim'),
+('peter',   HASHBYTES('SHA1', 'password2'), 'Peter Tan'),
+('pauline', HASHBYTES('SHA1', 'password3'), 'Pauline Chan');
+
+CREATE TABLE ListingTable (
+  Id             INT          PRIMARY KEY IDENTITY,
+  FoodName       VARCHAR(100)  NOT NULL,
+  Brand          VARCHAR(70)   NOT NULL,
+  ExpiryDate     DATE          NOT NULL,
+  Quantity       INT           NOT NULL,
+  Cost           FLOAT         NOT NULL,
+  Description    VARCHAR(2000) NOT NULL,
+  Picture        VARCHAR(70)   NOT NULL,
+  UserId         VARCHAR(10)   NOT NULL, 
+  HPno           INT           NOT NULL, 
+  CONSTRAINT TravelHighlightFk FOREIGN KEY(UserId) REFERENCES TravelUser(UserId)
+);
+
+SET IDENTITY_INSERT ListingTable ON
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (1, N'Canned Sardines', N'Farmland', N'2015-03-15', 11, 2.5, N'I bought in bulk 3 months ago and I do not think I am able to finish', N'Farmland-canned-sardine.jpg', N'john', 98012998)
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (2, N'Canned Luncheon Meat', N'Tulip', N'2015-02-25', 7, 2, N'Migrating next week, clearing out all my canned food', N'37a83179-7a3d-431d-8a1f-f0ce738d2d12.jpg', N'peter', 87664109)
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (3, N'Oreo Biscuit', N'Oreo', N'2014-12-01', 15, 4, N'Reason for sale: Cutting down on snacks.', N'3c264870-4349-4dbf-a842-76e06866cffe.jpg', N'pauline', 90126611)
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (4, N'Milo Packet Drink 200ml x 24', N'Nestle', N'2007-07-31', 1, 10, N'First come first serve, contact me for meet ups and details', N'04782588-642b-4a13-8bfd-1defecb2a39c.jpg', N'peter', 88120911)
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (5, N'Instant noodle 6 in 1 packet', N'Nissin', N'2015-05-07', 1, 2.8, N'Getting rid of all my high sodium food', N'eb85a6d1-00a5-4aad-af4d-5265a4c1d255.jpg', N'pauline', 81093980)
+INSERT INTO ListingTable ([Id], [FoodName], [Brand], [ExpiryDate], [Quantity], [Cost], [Description], [Picture], [UserId], [HPno]) VALUES (7, N'Coffee Packet 3IN1', N'Nescafe', N'2023-03-11', 3, 5, N'Bought on Impulse', N'6af985ac-0c19-422f-91e9-a02acd84c35e.jpg', N'john', 98012998)
+SET IDENTITY_INSERT ListingTable OFF
+
+CREATE TABLE Candidate (
+   RegNo      INT PRIMARY KEY,
+   CName      VARCHAR(50) NOT NULL,
+   Gender     CHAR        NOT NULL,
+   Height     FLOAT       NOT NULL,
+   BirthDate  DATE        NOT NULL,
+   Race       VARCHAR(5)  NOT NULL,
+   Clearance  BIT         NOT NULL,
+   PicFile    VARCHAR(30) NOT NULL 
+);
+
+INSERT Candidate(RegNo, CName, Gender, Height, BirthDate, Race, Clearance, PicFile) VALUES
+(101,'Kevin Ong',  'M', 1.69,'1980-06-07','CH','true','1.jpg'),
+(102,'Dewi Aisha', 'F', 1.65,'1987-08-30','MA','false','2.jpg'),
+(103,'Alex Kurien','M', 1.71,'1979-08-30','IN','false','3.jpg'),
+(104,'Panda McKoo','M', 1.70,'1970-04-17','OT','true','4.jpg'),
+(105,'Chris Koh',  'M', 1.75,'1982-01-31','CH','false','5.jpg');
+
