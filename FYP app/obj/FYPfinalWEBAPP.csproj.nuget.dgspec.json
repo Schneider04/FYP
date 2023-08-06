@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\21022677\\source\\repos\\PearlyLin\\FYP\\FYP app\\FYPfinalWEBAPP.csproj": {}
+    "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\FYPfinalWEBAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\21022677\\source\\repos\\PearlyLin\\FYP\\FYP app\\FYPfinalWEBAPP.csproj": {
+    "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\FYPfinalWEBAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\21022677\\source\\repos\\PearlyLin\\FYP\\FYP app\\FYPfinalWEBAPP.csproj",
+        "projectUniqueName": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\FYPfinalWEBAPP.csproj",
         "projectName": "FYPfinalWEBAPP",
-        "projectPath": "C:\\Users\\21022677\\source\\repos\\PearlyLin\\FYP\\FYP app\\FYPfinalWEBAPP.csproj",
+        "projectPath": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\FYPfinalWEBAPP.csproj",
         "packagesPath": "C:\\Users\\21022677\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\21022677\\source\\repos\\PearlyLin\\FYP\\FYP app\\obj\\",
+        "outputPath": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -69,6 +69,10 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.1.0, )"
@@ -76,6 +80,14 @@
             "MySql.Data.EntityFramework": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "MySqlConnector": {
               "target": "Package",
@@ -85,6 +97,10 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "NuGet.Frameworks": {
+              "target": "Package",
+              "version": "[6.6.1, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -92,6 +108,10 @@
             "RockLib.Configuration": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "System.Data.SQLite.EF6": {
+              "target": "Package",
+              "version": "[1.0.118, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -118,11 +138,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

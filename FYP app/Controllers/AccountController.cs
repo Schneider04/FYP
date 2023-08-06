@@ -7,7 +7,6 @@ using RP.SOI.DotNet.Utils;
 using System.Data;
 using System.Security.Claims;
 
-
 namespace FYPfinalWEBAPP.Controllers;
 
 public class AccountController : Controller
