@@ -5,6 +5,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<RootNamespace>FYPfinalWEBAPP</RootNamespace>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<UserSecretsId>e64b727a-9fa7-4f3a-9ea7-cd56012c2a2e</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
