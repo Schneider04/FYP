@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\PregoPasta.jpg"
     },
     {
+      "Id": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
       "Id": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\wwwroot\\images\\download.jpeg",
       "PackagePath": "staticwebassets\\images\\download.jpeg"
     },

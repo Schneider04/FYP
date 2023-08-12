@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4EDu4xFy1WQjm4KnrOss0CmrqynnHJ/c+m6Z3LTwbB8=",
+  "Hash": "6D2WDZ8pFz4+YLkEaopXwX+Vvx10XM7hF2kgKrKwRqA=",
   "Source": "FYPfinalWEBAPP",
   "BasePath": "_content/FYPfinalWEBAPP",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\85a300cf-f37f-4103-8876-ade4091b6e8d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\wwwroot\\images\\background.jpg",
+      "SourceId": "FYPfinalWEBAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\wwwroot\\",
+      "BasePath": "_content/FYPfinalWEBAPP",
+      "RelativePath": "images/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
       "Identity": "C:\\Users\\21022677\\source\\repos\\Schneider04\\FYP\\FYP app\\wwwroot\\images\\download.jpeg",
