@@ -75,8 +75,10 @@ public class ListingController : Controller
         {
             string userid = User.FindFirst(ClaimTypes.NameIdentifier)!.Value; ; 
             string picfilename = DoPhotoUpload(list.Photo);
-            if{
-                list.ExpiryDate < DateTime.Now();
+            int a = 1;
+            if(a==1){
+                TempData["Message"] = "Presentation a = 1!";
+
             }
             string sql = @"INSERT INTO ListingTable(FoodName, Brand, ExpiryDate, Quantity, Cost, Description, Picture, UserId, HPno) VALUES ('{0}', '{1}', '{2:yyyy-MM-dd}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')";
             
