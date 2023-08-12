@@ -35,5 +35,5 @@ FROM base AS final
 WORKDIR /app
 #copies published files from "publish" stages into current directory 
 COPY --from=publish /app/publish .
-"specifies command that will be executed when container started from this image, runs FYPfinalWEBAPP.dll assembly using dotnet command
+#specifies command that will be executed when container started from this image, runs FYPfinalWEBAPP.dll assembly using dotnet command
 ENTRYPOINT ["dotnet", "FYPfinalWEBAPP.dll"]
